@@ -1,10 +1,11 @@
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
-  const skills = ["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS"];
-
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-20 pb-10">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col justify-center pt-20 pb-10"
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center text-center animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
           <p className="text-theme-blue mb-4 font-medium">Hello, my name is</p>
@@ -29,10 +30,11 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-24 overflow-hidden">
+        {/* Centralized Skills Section */}
+        <div className="mt-24 flex justify-center items-center w-full">
           <div className="marquee-container">
             <div className="marquee-content">
-              {skills.map((skill, i) => (
+              {["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS"].map((skill, i) => (
                 <div key={i} className="marquee-item">{skill}</div>
               ))}
             </div>
