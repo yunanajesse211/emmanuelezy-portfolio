@@ -1,12 +1,10 @@
-
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
+  const skills = ["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS"];
+
   return (
-    <section
-      id="home"
-      className="min-h-screen flex flex-col justify-center pt-20 pb-10"
-    >
+    <section id="home" className="min-h-screen flex flex-col justify-center pt-20 pb-10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center text-center animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
           <p className="text-theme-blue mb-4 font-medium">Hello, my name is</p>
@@ -20,7 +18,7 @@ const HeroSection = () => {
             I design and develop experiences that make people's lives simple.
             I specialize in creating accessible, human-centered products.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="bg-theme-blue hover:bg-theme-blue/80 px-8 py-6">
               <a href="#contact">Get In Touch</a>
@@ -34,20 +32,8 @@ const HeroSection = () => {
         <div className="mt-24 overflow-hidden">
           <div className="marquee-container">
             <div className="marquee-content">
-              {Array(10).fill(0).map((_, i) => (
-                <div key={i} className="marquee-item">React</div>
-              ))}
-              {Array(10).fill(0).map((_, i) => (
-                <div key={i} className="marquee-item">TypeScript</div>
-              ))}
-              {Array(10).fill(0).map((_, i) => (
-                <div key={i} className="marquee-item">Node.js</div>
-              ))}
-              {Array(10).fill(0).map((_, i) => (
-                <div key={i} className="marquee-item">Next.js</div>
-              ))}
-              {Array(10).fill(0).map((_, i) => (
-                <div key={i} className="marquee-item">TailwindCSS</div>
+              {skills.map((skill, i) => (
+                <div key={i} className="marquee-item">{skill}</div>
               ))}
             </div>
           </div>
