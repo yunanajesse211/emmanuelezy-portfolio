@@ -32,12 +32,19 @@ const HeroSection = () => {
 
         {/* Centralized Skills Section */}
         <div className="mt-24 flex justify-center items-center w-full">
-          <div className="marquee-container">
-            <div className="marquee-content">
-              {["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS","Javascript"].map((skill, i) => (
-                <div key={i} className="marquee-item">{skill}</div>
-              ))}
-            </div>
+          <div className="flex flex-wrap justify-center gap-6">
+            {[
+              "React",
+              "TypeScript",
+              "Node.js",
+              "Next.js",
+              "TailwindCSS",
+              "Javascript",
+            ].map((skill, i) => (
+              <span key={i} className="text-white text-lg font-medium bg-gray-800 px-4 py-2 rounded-md">
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
       </div>
