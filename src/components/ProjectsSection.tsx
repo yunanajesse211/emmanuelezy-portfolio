@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -20,7 +19,7 @@ const projects: Project[] = [
     category: "Web Development",
     image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=E-commerce+Platform",
     description: "A full-featured e-commerce platform built with React, Node.js, and MongoDB.",
-    technologies: ["React", "Node.js", "Express", "React.js"],
+    technologies: ["React", "Node.js", "Express"],
     link: "https://flypharmacy.com.ng/",
   },
   {
@@ -28,7 +27,7 @@ const projects: Project[] = [
     title: "Movie World",
     category: "Web Application",
     image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=Movie+World",
-    description: "A responsive portfolio website for a photographer showcasing their work.",
+    description: "An interactive movie database application allowing users to browse and search movies.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     link: "https://my-first-react-7di1cpenj-melchizedek-fortunes-projects.vercel.app/",
   },
@@ -37,7 +36,7 @@ const projects: Project[] = [
     title: "Weather Forecast App",
     category: "Web Application",
     image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=Weather+Forecast+App",
-    description: "A task management application with drag-and-drop functionality.",
+    description: "A real-time weather forecasting application with location-based data and a clean UI.",
     technologies: ["React", "TypeScript", "Firebase", "TailwindCSS"],
     link: "https://weather-ilenvdl7j-melchizedek-fortunes-projects.vercel.app/",
   },
@@ -45,11 +44,11 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   const [filter, setFilter] = useState('all');
-  
+
   const categories = ['all', ...new Set(projects.map(project => project.category.toLowerCase()))];
-  
-  const filteredProjects = filter === 'all' 
-    ? projects 
+
+  const filteredProjects = filter === 'all'
+    ? projects
     : projects.filter(project => project.category.toLowerCase() === filter);
 
   return (
@@ -62,7 +61,7 @@ const ProjectsSection = () => {
             Here are some of my recent projects. Each project represents my skills and expertise in different areas.
           </p>
         </div>
-        
+
         <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
           {categories.map((category, index) => (
             <button
@@ -79,23 +78,23 @@ const ProjectsSection = () => {
             </button>
           ))}
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div 
-              key={project.id} 
+            <div
+              key={project.id}
               className="bg-secondary rounded-lg overflow-hidden group animate-fade-in opacity-0"
               style={{ animationDelay: `${0.2 + (project.id * 0.1)}s` }}
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-theme-blue/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a 
-                    href={project.link} 
+                  <a
+                    href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white text-theme-blue px-4 py-2 rounded-full font-medium hover:bg-opacity-90"
@@ -119,8 +118,6 @@ const ProjectsSection = () => {
             </div>
           ))}
         </div>
-        
-        
       </div>
     </section>
   );
