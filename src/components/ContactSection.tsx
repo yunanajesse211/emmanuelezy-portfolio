@@ -1,10 +1,8 @@
-
 'use client';
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -40,207 +38,159 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 grid-pattern opacity-20"></div>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-theme-cyan/30 to-transparent"></div>
-      
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-xl mx-auto text-center mb-16 animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
-          <span className="px-4 py-2 rounded-full text-xs font-semibold bg-theme-cyan/20 text-theme-cyan mb-4 inline-block">
-            GET IN TOUCH
-          </span>
-          <h2 className="text-3xl font-bold mb-4">
-            Let's <span className="gradient-text">Connect</span>
-          </h2>
-          <p className="text-white/70">
-            Have a project idea or need data science expertise? I'm always open to discussing
-            new opportunities and collaborations.
+    <section id="contact" className="py-20 bg-black/30">
+      <div className="container mx-auto px-4 md:px-6">
+        <div
+          className="text-center mb-12 animate-fade-in opacity-0"
+          style={{ animationDelay: '0.2s' }}
+        >
+          <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
+          <div className="h-1 w-20 bg-theme-blue mx-auto mb-6" />
+          <p className="text-white/70 max-w-2xl mx-auto">
+            Have a project in mind or just want to say hello? Feel free to reach out to me.
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Contact Information */}
-          <div className="w-full lg:w-5/12 animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
-            <div className="glass-effect p-8 rounded-2xl h-full border border-theme-cyan/10">
+        <div className="flex flex-col md:flex-row gap-12">
+          <div
+            className="w-full md:w-5/12 animate-fade-in opacity-0"
+            style={{ animationDelay: '0.3s' }}
+          >
+            <div className="bg-secondary p-8 rounded-lg h-full">
               <h3 className="text-2xl font-bold mb-6 gradient-text">Contact Information</h3>
-              
-              <div className="space-y-8">
-                {/* Email */}
-                <div className="flex items-start gap-5">
-                  <div className="p-3 bg-theme-cyan/20 rounded-xl">
-                    <Mail className="h-6 w-6 text-theme-cyan" />
+              <div className="space-y-6">
+                {/* Location */}
+                <div className="flex items-start gap-4">
+                  <div className="text-theme-blue mt-1">
+                    {/* Location Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-lg mb-1">Email Address</h4>
-                    <a 
-                      href="mailto:yunanajesse@gmail.com" 
-                      className="text-theme-cyan hover:underline"
-                    >
-                      yunanajesse@gmail.com
+                    <h4 className="font-medium mb-1">Location</h4>
+                    <p className="text-white/70">London, United Kingdom</p>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-start gap-4">
+                  <div className="text-theme-blue mt-1">
+                    {/* Mail Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0V6.993a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-1">Email</h4>
+                    <a href="mailto:ezekiel.nuel@gmail.com" className="text-theme-blue hover:underline">
+                      ezekiel.nuel@gmail.com
                     </a>
                   </div>
                 </div>
-                
+
                 {/* Phone */}
-                <div className="flex items-start gap-5">
-                  <div className="p-3 bg-theme-cyan/20 rounded-xl">
-                    <Phone className="h-6 w-6 text-theme-cyan" />
+                <div className="flex items-start gap-4">
+                  <div className="text-theme-blue mt-1">
+                    {/* Phone Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                    </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-lg mb-1">Phone Number</h4>
-                    <a 
-                      href="tel:+447867625493" 
-                      className="text-theme-cyan hover:underline"
-                    >
+                    <h4 className="font-medium mb-1">Phone</h4>
+                    <a href="tel:+447867625493" className="text-theme-blue hover:underline">
                       +44 7867 625493
                     </a>
                   </div>
                 </div>
-                
-                {/* Location */}
-                <div className="flex items-start gap-5">
-                  <div className="p-3 bg-theme-cyan/20 rounded-xl">
-                    <MapPin className="h-6 w-6 text-theme-cyan" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-lg mb-1">Location</h4>
-                    <p className="text-white/70">London, United Kingdom</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-10">
-                <h4 className="font-medium mb-4">Connect with Me</h4>
-                <div className="flex space-x-3">
-                  <a 
-                    href="https://github.com/yunanajesse211" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full flex items-center justify-center bg-theme-cyan/10 text-theme-cyan
-                      hover:bg-theme-cyan hover:text-black transition-colors"
-                    aria-label="GitHub"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                  <a 
-                    href="#" 
-                    className="w-10 h-10 rounded-full flex items-center justify-center bg-theme-cyan/10 text-theme-cyan
-                      hover:bg-theme-cyan hover:text-black transition-colors"
-                    aria-label="LinkedIn"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                      <rect x="2" y="9" width="4" height="12"></rect>
-                      <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                  </a>
-                  <a 
-                    href="#" 
-                    className="w-10 h-10 rounded-full flex items-center justify-center bg-theme-cyan/10 text-theme-cyan
-                      hover:bg-theme-cyan hover:text-black transition-colors"
-                    aria-label="Twitter"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                    </svg>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
-          
+
           {/* Contact Form */}
-          <div className="w-full lg:w-7/12 animate-fade-in opacity-0" style={{ animationDelay: '0.5s' }}>
-            <div className="glass-effect p-8 rounded-2xl border border-theme-cyan/10">
-              <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-              
-              <form onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-white/80">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 bg-secondary/50 border border-theme-cyan/20 rounded-xl text-white 
-                        focus:outline-none focus:ring-2 focus:ring-theme-cyan/50 focus:border-transparent"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-white/80">
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 bg-secondary/50 border border-theme-cyan/20 rounded-xl text-white 
-                        focus:outline-none focus:ring-2 focus:ring-theme-cyan/50 focus:border-transparent"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                </div>
-                
-                <div className="mb-6">
-                  <label htmlFor="subject" className="block mb-2 text-sm font-medium text-white/80">
-                    Subject
+          <div
+            className="w-full md:w-7/12 animate-fade-in opacity-0"
+            style={{ animationDelay: '0.5s' }}
+          >
+            <form onSubmit={handleSubmit} className="bg-secondary p-8 rounded-lg">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label htmlFor="name" className="block mb-2 font-medium">
+                    Your Name
                   </label>
                   <input
                     type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
+                    id="name"
+                    name="name"
+                    value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-secondary/50 border border-theme-cyan/20 rounded-xl text-white 
-                      focus:outline-none focus:ring-2 focus:ring-theme-cyan/50 focus:border-transparent"
-                    placeholder="How can I help you?"
+                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-theme-blue"
                   />
                 </div>
-                
-                <div className="mb-6">
-                  <label htmlFor="message" className="block mb-2 text-sm font-medium text-white/80">
-                    Message
+                <div>
+                  <label htmlFor="email" className="block mb-2 font-medium">
+                    Your Email
                   </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleChange}
                     required
-                    rows={5}
-                    className="w-full px-4 py-3 bg-secondary/50 border border-theme-cyan/20 rounded-xl text-white resize-none 
-                      focus:outline-none focus:ring-2 focus:ring-theme-cyan/50 focus:border-transparent"
-                    placeholder="Write your message here..."
+                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-theme-blue"
                   />
                 </div>
-                
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-theme-cyan hover:bg-theme-cyan/80 text-black py-6 text-lg rounded-xl flex items-center justify-center gap-2"
-                >
-                  {isSubmitting ? (
-                    'Sending...'
-                  ) : (
-                    <>
-                      Send Message <Send className="h-5 w-5" />
-                    </>
-                  )}
-                </Button>
-              </form>
-            </div>
+              </div>
+
+              <div className="mb-6">
+                <label htmlFor="subject" className="block mb-2 font-medium">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-theme-blue"
+                />
+              </div>
+
+              <div className="mb-6">
+                <label htmlFor="message" className="block mb-2 font-medium">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={5}
+                  className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white resize-none focus:outline-none focus:ring-2 focus:ring-theme-blue"
+                />
+              </div>
+
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-theme-blue hover:bg-theme-blue/80 py-6 text-lg"
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </Button>
+            </form>
           </div>
         </div>
       </div>
