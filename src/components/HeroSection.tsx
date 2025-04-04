@@ -34,7 +34,7 @@ const HeroSection = () => {
         <div className="mt-24 flex justify-center items-center w-full">
           <div className="marquee-container">
             <div className="marquee-content">
-              {["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS"].map((skill, i) => (
+              {["React", "TypeScript", "Node.js", "Next.js", "TailwindCSS","Javascript"].map((skill, i) => (
                 <div key={i} className="marquee-item">{skill}</div>
               ))}
             </div>
