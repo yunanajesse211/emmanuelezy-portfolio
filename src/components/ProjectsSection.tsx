@@ -20,53 +20,26 @@ const projects: Project[] = [
     category: "Web Development",
     image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=E-commerce+Platform",
     description: "A full-featured e-commerce platform built with React, Node.js, and MongoDB.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux"],
-    link: "#",
+    technologies: ["React", "Node.js", "Express", "React,js"],
+    link: "https://flypharmacy.com.ng/",
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    category: "Web Design",
+    title: "Movie World",
+    category: "Web Application",
     image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=Portfolio+Website",
     description: "A responsive portfolio website for a photographer showcasing their work.",
-    technologies: ["HTML", "CSS", "JavaScript", "GSAP"],
-    link: "#",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    link: "https://my-first-react-7di1cpenj-melchizedek-fortunes-projects.vercel.app/",
   },
   {
     id: 3,
-    title: "Task Management App",
+    title: "Weather Forecast App",
     category: "Web Application",
     image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=Task+Management+App",
     description: "A task management application with drag-and-drop functionality.",
     technologies: ["React", "TypeScript", "Firebase", "TailwindCSS"],
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Fitness Tracker",
-    category: "Mobile App",
-    image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=Fitness+Tracker",
-    description: "A fitness tracking application for monitoring workouts and progress.",
-    technologies: ["React Native", "Redux", "Node.js", "MongoDB"],
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "Weather Dashboard",
-    category: "Web Application",
-    image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=Weather+Dashboard",
-    description: "A weather dashboard using a third-party API to display current and forecasted weather.",
-    technologies: ["React", "API Integration", "Chart.js", "TailwindCSS"],
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "Restaurant Website",
-    category: "Web Design",
-    image: "https://placehold.co/600x400/5B78F6/FFFFFF/png?text=Restaurant+Website",
-    description: "A website for a restaurant with menu, reservation, and contact features.",
-    technologies: ["Next.js", "TailwindCSS", "Framer Motion", "Vercel"],
-    link: "#",
+    link: "https://weather-ilenvdl7j-melchizedek-fortunes-projects.vercel.app/",
   },
 ];
 
@@ -147,13 +120,7 @@ const ProjectsSection = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12 animate-fade-in opacity-0" style={{ animationDelay: '0.7s' }}>
-          <Button className="bg-theme-blue hover:bg-theme-blue/80">
-            <a href="https://github.com/emmanuelezekiel" target="_blank" rel="noopener noreferrer">
-              View More on GitHub
-            </a>
-          </Button>
-        </div>
+        
       </div>
     </section>
   );
