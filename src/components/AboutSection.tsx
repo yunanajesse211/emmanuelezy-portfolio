@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 
 const AboutSection = () => {
@@ -10,20 +11,20 @@ const AboutSection = () => {
             <div className="h-1 w-20 bg-theme-blue mb-8"></div>
             
             <p className="text-white/70 mb-6">
-              I'm Emmanuel Ezekiel, a passionate Full-Stack Developer with expertise in creating 
-              exceptional digital experiences. With a strong foundation in both front-end and 
-              back-end technologies, I bring ideas to life through clean, efficient, and user-friendly code.
+              I'm Yunana Usheujawa Jesse, a passionate Data Scientist with expertise in extracting 
+              meaningful insights from complex datasets. With a strong foundation in statistical analysis, 
+              machine learning, and programming, I transform raw data into valuable business intelligence.
             </p>
             
             <p className="text-white/70 mb-6">
-              My journey in web development began over five years ago. Since then, 
-              I've had the opportunity to work with various clients and companies to deliver 
-              solutions that not only meet their requirements but also exceed their expectations.
+              My journey in data science began several years ago, and I've since worked on various projects 
+              involving predictive modeling, natural language processing, and data visualization. I'm committed 
+              to using data to solve real-world problems and drive decision-making processes.
             </p>
             
             <p className="text-white/70 mb-8">
-              I'm constantly learning and adapting to new technologies and methodologies to 
-              ensure I stay at the forefront of web development trends.
+              I'm constantly expanding my knowledge in emerging technologies and methodologies in the 
+              field of data science and artificial intelligence to deliver innovative solutions.
             </p>
           </div>
           
@@ -33,12 +34,12 @@ const AboutSection = () => {
                 <h3 className="text-xl font-semibold mb-4 gradient-text">Education</h3>
                 <ul className="space-y-4">
                   <li>
-                    <p className="font-medium">MSc Computer Science</p>
-                    <p className="text-white/60 text-sm">University of Bradford</p>
+                    <p className="font-medium">MSc Data Science</p>
+                    <p className="text-white/60 text-sm">University of Technology</p>
                   </li>
                   <li>
-                    <p className="font-medium">Web Development Certification</p>
-                    <p className="text-white/60 text-sm">freeCodeCamp, 2018</p>
+                    <p className="font-medium">BSc Computer Science</p>
+                    <p className="text-white/60 text-sm">Federal University</p>
                   </li>
                 </ul>
               </div>
@@ -47,34 +48,34 @@ const AboutSection = () => {
                 <h3 className="text-xl font-semibold mb-4 gradient-text">Experience</h3>
                 <ul className="space-y-4">
                   <li>
-                    <p className="font-medium">Senior Developer</p>
-                    <p className="text-white/60 text-sm">Tech Solutions Inc., 2021–Present</p>
+                    <p className="font-medium">Senior Data Scientist</p>
+                    <p className="text-white/60 text-sm">Tech Innovations Ltd., 2021–Present</p>
                   </li>
                   <li>
-                    <p className="font-medium">Web Developer</p>
-                    <p className="text-white/60 text-sm">Digital Agency, 2019–2021</p>
+                    <p className="font-medium">Data Analyst</p>
+                    <p className="text-white/60 text-sm">Data Insights Co., 2019–2021</p>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-secondary p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4 gradient-text">Skills</h3>
+                <h3 className="text-xl font-semibold mb-4 gradient-text">Technical Skills</h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">HTML/CSS</span>
-                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">JavaScript</span>
-                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">TypeScript</span>
-                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">React</span>
-                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">Next.js</span>
-                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">Node.js</span>
+                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">Python</span>
+                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">R</span>
+                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">SQL</span>
+                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">TensorFlow</span>
+                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">PyTorch</span>
+                  <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">Pandas</span>
                 </div>
               </div>
               
               <div className="bg-secondary p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4 gradient-text">Interests</h3>
                 <ul className="space-y-2 text-white/70">
-                  <li>Open Source Contribution</li>
-                  <li>Tech Blogging</li>
-                  <li>UI/UX Design</li>
+                  <li>Machine Learning Research</li>
+                  <li>Big Data Analytics</li>
+                  <li>Data Visualization</li>
                 </ul>
               </div>
             </div>

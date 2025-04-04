@@ -1,4 +1,6 @@
+
 import { Button } from '@/components/ui/button';
+import { FileText } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -10,14 +12,14 @@ const HeroSection = () => {
         <div className="flex flex-col items-center text-center animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
           <p className="text-theme-blue mb-4 font-medium">Hello, my name is</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-            Emmanuel Ezekiel
+            Yunana Usheujawa Jesse
           </h1>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white/70 mb-8">
-            I'm a <span className="gradient-text">Full-Stack Developer</span>
+            I'm a <span className="gradient-text">Data Scientist</span>
           </h2>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mb-10">
-            I design and develop experiences that make people's lives simple.
-            I specialize in creating accessible, human-centered products.
+            I transform complex data into actionable insights. 
+            Specializing in machine learning, data analysis, and visualization to solve real-world problems.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -27,6 +29,10 @@ const HeroSection = () => {
             <Button variant="outline" className="border-theme-blue text-theme-blue hover:bg-theme-blue/10 px-8 py-6">
               <a href="#projects">View Projects</a>
             </Button>
+            <Button variant="secondary" className="px-8 py-6 flex items-center gap-2">
+              <FileText className="h-5 w-5" />
+              <a href="/resume.pdf" download>Download Resume</a>
+            </Button>
           </div>
         </div>
 
@@ -34,12 +40,12 @@ const HeroSection = () => {
         <div className="mt-24 flex justify-center items-center w-full">
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              "React",
-              "TypeScript",
-              "Node.js",
-              "Next.js",
-              "TailwindCSS",
-              "Javascript",
+              "Python",
+              "Machine Learning",
+              "Data Analysis",
+              "TensorFlow",
+              "PyTorch",
+              "Data Visualization",
             ].map((skill, i) => (
               <span key={i} className="text-white text-lg font-medium bg-gray-800 px-4 py-2 rounded-md">
                 {skill}
