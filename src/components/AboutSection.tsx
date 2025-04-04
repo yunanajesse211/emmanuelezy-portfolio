@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 
 const AboutSection = () => {
@@ -17,17 +16,15 @@ const AboutSection = () => {
             </p>
             
             <p className="text-white/70 mb-6">
-              My journey in web development started over 5 years ago, and since then, 
+              My journey in web development began over five years ago. Since then, 
               I've had the opportunity to work with various clients and companies to deliver 
-              solutions that not only meet their requirements but exceed their expectations.
+              solutions that not only meet their requirements but also exceed their expectations.
             </p>
             
             <p className="text-white/70 mb-8">
               I'm constantly learning and adapting to new technologies and methodologies to 
-              ensure that I'm always at the forefront of web development trends.
+              ensure I stay at the forefront of web development trends.
             </p>
-            
-           
           </div>
           
           <div className="w-full md:w-1/2 animate-fade-in opacity-0" style={{ animationDelay: '0.5s' }}>
@@ -41,7 +38,7 @@ const AboutSection = () => {
                   </li>
                   <li>
                     <p className="font-medium">Web Development Certification</p>
-                    <p className="text-white/60 text-sm">FreeCodeCamp, 2018</p>
+                    <p className="text-white/60 text-sm">freeCodeCamp, 2018</p>
                   </li>
                 </ul>
               </div>
@@ -51,11 +48,11 @@ const AboutSection = () => {
                 <ul className="space-y-4">
                   <li>
                     <p className="font-medium">Senior Developer</p>
-                    <p className="text-white/60 text-sm">Tech Solutions Inc., 2021-Present</p>
+                    <p className="text-white/60 text-sm">Tech Solutions Inc., 2021–Present</p>
                   </li>
                   <li>
                     <p className="font-medium">Web Developer</p>
-                    <p className="text-white/60 text-sm">Digital Agency, 2019-2021</p>
+                    <p className="text-white/60 text-sm">Digital Agency, 2019–2021</p>
                   </li>
                 </ul>
               </div>
@@ -69,17 +66,15 @@ const AboutSection = () => {
                   <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">React</span>
                   <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">Next.js</span>
                   <span className="px-3 py-1 bg-muted text-white/80 rounded-full text-xs">Node.js</span>
-                
                 </div>
               </div>
               
               <div className="bg-secondary p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4 gradient-text">Interests</h3>
                 <ul className="space-y-2 text-white/70">
-                  <li>Open Source Contributing</li>
+                  <li>Open Source Contribution</li>
                   <li>Tech Blogging</li>
                   <li>UI/UX Design</li>
-                
                 </ul>
               </div>
             </div>
