@@ -16,7 +16,7 @@ const HeroSection = () => {
             I'm a <span className="gradient-text">Full-Stack Developer</span>
           </h2>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mb-10">
-            I create digital products that look as great as they perform. With a full stack development background and a natural interest in retail technology, I am the kind of developer who loves making legacy become legendary. Whether it's getting features in the hands of users quickly, enabling cloud-first architecture at scale, or being a perfectionist when it comes to pixel-perfect UI—I exist to write code that resonates with actual users. I excel in agile teams, enjoy writing clean, thoroughly tested code, and apply an entrepreneurial mindset to each sprint.
+            I create digital products that look as great as they perform. With a full stack development background and a natural interest in retail technology, I am the kind of developer who loves making legacy become legendary. Whether it's getting features in the hands of users quickly, enabling cloud-first architecture at scale, or being a perfectionist when it comes to pixel-perfect UI—I exist to write code that resonates with actual users. I thrive in agile teams, enjoy writing clean, thoroughly tested code, and apply an entrepreneurial mindset to each sprint.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -33,12 +33,20 @@ const HeroSection = () => {
         <div className="mt-24 flex justify-center items-center w-full">
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              "React",
-              "TypeScript",
-              "Node.js",
+              "React.js",
               "Next.js",
-              "TailwindCSS",
-              "Javascript",
+              "TypeScript",
+              "Remix",
+              "Node.js",
+              "Express",
+              "AWS Lambda",
+              "DynamoDB",
+              "AppSync",
+              "React Native",
+              "Jest",
+              "TDD / BDD",
+              "CI/CD",
+              "Git",
             ].map((skill, i) => (
               <span key={i} className="text-white text-lg font-medium bg-gray-800 px-4 py-2 rounded-md">
                 {skill}
