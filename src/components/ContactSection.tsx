@@ -59,43 +59,7 @@ const ContactSection = () => {
             <div className="bg-secondary p-8 rounded-lg h-full">
               <h3 className="text-2xl font-bold mb-6 gradient-text">Contact Information</h3>
               <div className="space-y-6">
-                {/* Location */}
-                <div className="flex items-start gap-4">
-                  <div className="text-theme-blue mt-1">
-                    {/* Location Icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round"
-                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                      <path strokeLinecap="round" strokeLinejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-medium mb-1">Location</h4>
-                    <p className="text-white/70">London, United Kingdom</p>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="text-theme-blue mt-1">
-                    {/* Mail Icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round"
-                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0V6.993a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-medium mb-1">Email</h4>
-                    <a href="mailto:ezekiel.nuel@gmail.com" className="text-theme-blue hover:underline">
-                      ezekiel.nuel@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                {/* Phone */}
+                {/* Contact Details */}
                 <div className="flex items-start gap-4">
                   <div className="text-theme-blue mt-1">
                     {/* Phone Icon */}
@@ -112,6 +76,57 @@ const ContactSection = () => {
                     </a>
                   </div>
                 </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="text-theme-blue mt-1">
+                    {/* Email Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0V6.993a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-1">Email</h4>
+                    <a href="mailto:ezekielsanuel@gmail.com" className="text-theme-blue hover:underline">
+                      ezekielsanuel@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="text-theme-blue mt-1">
+                    {/* Location Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-1">Location</h4>
+                    <p className="text-white/70">Based in UK, Open to relocation/travel</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="text-theme-blue mt-1">
+                    {/* LinkedIn Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M16.5 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM6 9.75a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v8.25a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75V9.75zM3 7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75V7.5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-1">LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/ezeknuel" className="text-theme-blue hover:underline">
+                      www.linkedin.com/in/ezeknuel
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -124,9 +139,7 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="bg-secondary p-8 rounded-lg">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="name" className="block mb-2 font-medium">
-                    Your Name
-                  </label>
+                  <label htmlFor="name" className="block text-white">Name</label>
                   <input
                     type="text"
                     id="name"
@@ -134,13 +147,11 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-theme-blue"
+                    className="w-full p-3 mt-2 rounded-md"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block mb-2 font-medium">
-                    Your Email
-                  </label>
+                  <label htmlFor="email" className="block text-white">Email</label>
                   <input
                     type="email"
                     id="email"
@@ -148,15 +159,13 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-theme-blue"
+                    className="w-full p-3 mt-2 rounded-md"
                   />
                 </div>
               </div>
 
               <div className="mb-6">
-                <label htmlFor="subject" className="block mb-2 font-medium">
-                  Subject
-                </label>
+                <label htmlFor="subject" className="block text-white">Subject</label>
                 <input
                   type="text"
                   id="subject"
@@ -164,30 +173,24 @@ const ContactSection = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-theme-blue"
+                  className="w-full p-3 mt-2 rounded-md"
                 />
               </div>
 
               <div className="mb-6">
-                <label htmlFor="message" className="block mb-2 font-medium">
-                  Message
-                </label>
+                <label htmlFor="message" className="block text-white">Message</label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-muted border border-border rounded-lg text-white resize-none focus:outline-none focus:ring-2 focus:ring-theme-blue"
+                  rows={6}
+                  className="w-full p-3 mt-2 rounded-md"
                 />
               </div>
 
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-theme-blue hover:bg-theme-blue/80 py-6 text-lg"
-              >
+              <Button type="submit" disabled={isSubmitting} className="w-full">
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
